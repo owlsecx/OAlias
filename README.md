@@ -18,13 +18,18 @@
 
 ## 📌 Overview
 
-Generate highly realistic fake identities for authorised
+OAlias is an advanced fake-identity generator for authorised penetration testing, security-awareness training, red-team operations, QA test-data seeding and OSINT simulation. It produces highly realistic synthetic profiles across 20+ locales, with reproducible output when a seed is supplied so test data can be regenerated exactly. Identities can be exported in bulk to TXT, JSON, CSV, XML, YAML or SQL for downstream use.
 
 ---
 
 ## ✨ Features
 
-- Reproducible fake identities for authorised test data
+- Realistic fake identities across 20+ locales
+- Reproducible generation via --seed (same seed, locale and fields → same data)
+- Bulk generation of many identities with a single command
+- Custom profiles and selectable field sets
+- Export to JSON, CSV, XML, YAML, SQL and TXT
+- Field and locale discovery with --list-fields / --list-locales
 
 ---
 
@@ -38,7 +43,10 @@ Generate highly realistic fake identities for authorised
 ## 🚀 Usage
 
 ```bash
-./OAlias
+./OAlias --quick
+./OAlias --bulk 100 --locale en_US --fmt csv
+./OAlias --list-locales
+./OAlias --help
 ```
 
 ---
